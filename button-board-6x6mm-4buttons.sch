@@ -4,13 +4,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Button Board / 3 Buttons / 6x6mm / 52x20mm"
+Title "Button Board / 4 Buttons / 6x6mm / 52x20mm"
 Date "2021-05-22"
 Rev "v1r1"
 Comp "github.com/zytzeiche/button-board-6x6mm-4buttons"
 Comment1 ""
 Comment2 ""
-Comment3 ""
+Comment3 "Distance of mounting holes: 36 and 10 mm"
 Comment4 "Assembling: remember to solder a bridge to GND _or_ to VCC for every Button"
 $EndDescr
 $Comp
