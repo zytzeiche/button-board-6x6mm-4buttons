@@ -104,17 +104,6 @@ $EndComp
 Text Notes 1200 900  0    98   ~ 0
 Button Board / 4 Buttons @ 6x6mm / 52x20mm / 3.2 mm mounting holes
 $Comp
-L Jumper:Jumper_3_Open JP1
-U 1 1 60DA43AF
-P 3150 2550
-F 0 "JP1" V 3196 2637 50  0000 L CNN
-F 1 "Jumper_3_Open" V 4400 2250 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 3150 2550 50  0001 C CNN
-F 3 "~" H 3150 2550 50  0001 C CNN
-	1    3150 2550
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:VCC #PWR01
 U 1 1 60DB0BF6
 P 4150 1800
@@ -190,45 +179,12 @@ F 3 "~" H 6400 2950 50  0001 C CNN
 	1    6400 2750
 	0    1    1    0   
 $EndComp
-$Comp
-L Jumper:Jumper_3_Open JP2
-U 1 1 60DA3BBA
-P 4550 2550
-F 0 "JP2" V 4596 2637 50  0000 L CNN
-F 1 "Jumper_3_Open" V 5800 2250 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 4550 2550 50  0001 C CNN
-F 3 "~" H 4550 2550 50  0001 C CNN
-	1    4550 2550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Jumper:Jumper_3_Open JP3
-U 1 1 60D8C255
-P 5950 2550
-F 0 "JP3" V 5996 2637 50  0000 L CNN
-F 1 "Jumper_3_Open" V 7200 2250 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 5950 2550 50  0001 C CNN
-F 3 "~" H 5950 2550 50  0001 C CNN
-	1    5950 2550
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3600 2550 3300 2550
 Wire Wire Line
 	5000 2550 4700 2550
 Wire Wire Line
 	6400 2550 6100 2550
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J1
-U 1 1 60D84789
-P 2000 3150
-F 0 "J1" H 2050 3467 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" H 2050 3376 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 2000 3150 50  0001 C CNN
-F 3 "~" H 2000 3150 50  0001 C CNN
-	1    2000 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3600 2950 3600 3050
 Wire Wire Line
@@ -243,17 +199,13 @@ Wire Wire Line
 	4200 3550 4550 3550
 Wire Wire Line
 	4200 3550 3150 3550
-Wire Wire Line
-	1650 3550 1650 3250
-Wire Wire Line
-	1650 3250 1800 3250
 Connection ~ 4200 3550
 Wire Wire Line
 	8100 1800 7150 1800
 Wire Wire Line
-	1650 1800 1650 3050
+	1650 1800 1650 3450
 Wire Wire Line
-	1650 3050 1800 3050
+	1650 3450 2300 3450
 Connection ~ 4150 1800
 Wire Wire Line
 	4150 1800 3150 1800
@@ -261,7 +213,7 @@ Wire Wire Line
 	3150 2800 3150 3550
 Connection ~ 3150 3550
 Wire Wire Line
-	3150 3550 1650 3550
+	3150 3550 2300 3550
 Wire Wire Line
 	3150 2300 3150 1800
 Connection ~ 3150 1800
@@ -3855,17 +3807,6 @@ F 3 "~" H 7600 2950 50  0001 C CNN
 	1    7600 2750
 	0    1    1    0   
 $EndComp
-$Comp
-L Jumper:Jumper_3_Open JP4
-U 1 1 60A9A211
-P 7150 2550
-F 0 "JP4" V 7196 2637 50  0000 L CNN
-F 1 "Jumper_3_Open" V 8400 2250 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 7150 2550 50  0001 C CNN
-F 3 "~" H 7150 2550 50  0001 C CNN
-	1    7150 2550
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7600 2550 7300 2550
 Wire Wire Line
@@ -3881,11 +3822,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 3250 2300 3250
 Wire Wire Line
-	7600 3350 1750 3350
-Wire Wire Line
-	1750 3350 1750 3150
-Wire Wire Line
-	1750 3150 1800 3150
+	7600 3350 2300 3350
 Wire Wire Line
 	7600 2950 7600 3350
 $Comp
@@ -7603,4 +7540,59 @@ CB 8C 97 EB 72 32 72 82 DE 47 B7 73 67 5B D8 41 CE CF 9C C7 DB 8E 37 3D 43 63 03
 2A A0 DD 43 30 FF 1F 20 39 90 3D B3 67 B2 3F 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 60AA74DC
+P 2100 3250
+F 0 "J1" H 2208 3631 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 2208 3540 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 2100 3250 50  0001 C CNN
+F 3 "~" H 2100 3250 50  0001 C CNN
+	1    2100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP4
+U 1 1 60A9A211
+P 7150 2550
+F 0 "JP4" V 7196 2637 50  0000 L CNN
+F 1 "Jumper_3_Open" V 8400 2250 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 7150 2550 50  0001 C CNN
+F 3 "~" H 7150 2550 50  0001 C CNN
+	1    7150 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP3
+U 1 1 60D8C255
+P 5950 2550
+F 0 "JP3" V 5996 2637 50  0000 L CNN
+F 1 "Jumper_3_Open" V 7200 2250 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 5950 2550 50  0001 C CNN
+F 3 "~" H 5950 2550 50  0001 C CNN
+	1    5950 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP2
+U 1 1 60DA3BBA
+P 4550 2550
+F 0 "JP2" V 4596 2637 50  0000 L CNN
+F 1 "Jumper_3_Open" V 5800 2250 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 4550 2550 50  0001 C CNN
+F 3 "~" H 4550 2550 50  0001 C CNN
+	1    4550 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP1
+U 1 1 60DA43AF
+P 3150 2550
+F 0 "JP1" V 3196 2637 50  0000 L CNN
+F 1 "Jumper_3_Open" V 4400 2250 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 3150 2550 50  0001 C CNN
+F 3 "~" H 3150 2550 50  0001 C CNN
+	1    3150 2550
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
